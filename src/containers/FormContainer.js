@@ -138,7 +138,7 @@ class FormContainer extends Component {
 	render() {
 		return (
 			<form className="container" onSubmit={this.handleFormSubmit}>
-				<h5>Pet Adoption Form</h5>
+				<h5>BotDetails Form</h5>
 				<SingleInput
 					inputType={'text'}
 					title={'Intent Name'}
@@ -168,13 +168,13 @@ class FormContainer extends Component {
 					options={this.state.stepsOptions}
 					selectedOption={this.state.stepsRangeSelection} />
 				<TextArea
-					title={'If you currently own pets, please write their names, breeds, and an outline of their personalities.'}
+					title={'Answer'}
 					rows={5}
 					resize={false}
 					content={this.state.description}
 					name={'currentPetInfo'}
 					controlFunc={this.handleDescriptionChange}
-					placeholder={'Please be thorough in your descriptions'} />
+					placeholder={'Please set the answer'} />
 				<input
 					type="submit"
 					className="btn btn-primary float-right"
